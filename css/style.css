@@ -129,7 +129,7 @@ body {
     width: 100%;
     position: absolute;
     height: 4px;
-    border-radius: 1px;
+    border-radius: 2px;
     bottom: -32px;
     display: block;
     background-color: var(--accent-text-color);
@@ -458,8 +458,7 @@ body {
     align-items: center;
     justify-content: center;
     fill: var(--icon-text-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:focus,
@@ -505,7 +504,7 @@ body {
     border-radius: 4px;
     width: 170px;
     height: 92px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-item-link:hover,
@@ -652,7 +651,7 @@ body {
     letter-spacing: 0.03em;
     cursor: pointer;
     color: var(--primery-title-color);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-buttons:hover,
@@ -733,7 +732,8 @@ body {
     background-color: rgba(33, 150, 243, 0.9);
 }
 
-.foto-link:hover .foto-overlay {
+.foto-link:hover .foto-overlay,
+.foto-link:focus .foto-overlay {
     transform: translateY(0);
 }
 
